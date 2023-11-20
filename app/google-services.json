@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "928584932671",
+    "project_id": "spotlist-c0693",
+    "storage_bucket": "spotlist-c0693.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:928584932671:android:9325c034b4201d67af078a",
+        "android_client_info": {
+          "package_name": "com.aabdalla.spotlist"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyARa9EX83ZV0uf-xZe1Mv4el8GJSffAB6c"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

@@ -1,0 +1,4 @@
+<resources>
+    <string name="app_name">Spotlist</string>
+    <string name="welcome">Up for a challenge, %1$s?</string>
+</resources>

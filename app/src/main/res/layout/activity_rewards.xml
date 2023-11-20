@@ -1,0 +1,320 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".RewardsActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="68dp">
+
+            <ImageView
+                android:id="@+id/imageView5"
+                android:layout_width="172dp"
+                android:layout_height="59dp"
+                android:layout_marginStart="16dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="1.0"
+                app:srcCompat="@drawable/logo_black" />
+
+            <Button
+                android:id="@+id/logout"
+                android:layout_width="99dp"
+                android:layout_height="33dp"
+                android:layout_marginStart="98dp"
+                android:layout_marginEnd="25dp"
+                android:backgroundTint="#B3D59E"
+                android:fontFamily="@font/circular_black"
+                android:text="LOG OUT"
+                android:textSize="10sp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="1.0"
+                app:layout_constraintStart_toEndOf="@+id/imageView5"
+                app:layout_constraintTop_toTopOf="parent"
+                app:layout_constraintVertical_bias="0.515" />
+
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="605dp">
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/cardView3"
+                android:layout_width="360dp"
+                android:layout_height="157dp"
+                android:layout_marginStart="17dp"
+                android:layout_marginEnd="16dp"
+                android:layout_marginBottom="208dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toBottomOf="parent"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="98dp"
+                        android:layout_height="43dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginBottom="12dp"
+                        android:backgroundTint="#535353"
+                        android:fontFamily="@font/circular_black"
+                        android:text="CLAIM"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="122dp"
+                        android:layout_height="122dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="19dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/logo_mcdonalds" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="132dp"
+                        android:fontFamily="@font/circular_black"
+                        android:text="McDonald's"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@+id/textView15"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintHorizontal_bias="0.0"
+                        app:layout_constraintStart_toEndOf="@+id/imageView14"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="190dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginEnd="19dp"
+                        android:layout_marginBottom="35dp"
+                        android:fontFamily="@font/circular_light"
+                        android:text="Collect a 10$ McDonald's giftcard when you claim this reward."
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toTopOf="@+id/button4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView14"
+                        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="59dp"
+                        android:layout_height="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="24dp"
+                        android:fontFamily="@font/circular_light"
+                        android:text="100 Points"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/button4" />
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_marginBottom="20dp"
+                        android:alpha="0.5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView17"
+                        app:srcCompat="@drawable/icon_points" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+
+            <TextView
+                android:id="@+id/welcome"
+                android:layout_width="196dp"
+                android:layout_height="34dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginTop="1dp"
+                android:layout_marginEnd="181dp"
+                android:fontFamily="@font/circular_bold"
+                android:text="Collect Rewards"
+                android:textColor="#8CC66B"
+                android:textSize="24sp"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent" />
+
+            <TextView
+                android:id="@+id/points"
+                android:layout_width="298dp"
+                android:layout_height="19dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginBottom="12dp"
+                android:fontFamily="@font/circular_medium"
+                android:text="You have 0 points."
+                android:textSize="14sp"
+                app:layout_constraintBottom_toTopOf="@+id/reservation"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toBottomOf="@+id/welcome" />
+
+            <androidx.cardview.widget.CardView
+                android:id="@+id/reservation"
+                android:layout_width="360dp"
+                android:layout_height="157dp"
+                android:layout_marginStart="16dp"
+                android:layout_marginEnd="17dp"
+                android:layout_marginBottom="17dp"
+                app:cardCornerRadius="10dp"
+                app:cardElevation="5dp"
+                app:layout_constraintBottom_toTopOf="@+id/cardView3"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintStart_toStartOf="parent">
+
+                <androidx.constraintlayout.widget.ConstraintLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                    <Button
+                        android:id="@+id/button4"
+                        android:layout_width="98dp"
+                        android:layout_height="43dp"
+                        android:layout_marginEnd="13dp"
+                        android:layout_marginBottom="12dp"
+                        android:backgroundTint="#535353"
+                        android:fontFamily="@font/circular_black"
+                        android:text="CLAIM"
+                        android:textSize="10sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toEndOf="parent" />
+
+                    <ImageView
+                        android:id="@+id/imageView14"
+                        android:layout_width="122dp"
+                        android:layout_height="122dp"
+                        android:layout_marginStart="16dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="12dp"
+                        android:layout_marginBottom="19dp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/imageView15"
+                        app:layout_constraintStart_toStartOf="parent"
+                        app:layout_constraintTop_toTopOf="parent"
+                        app:srcCompat="@drawable/logo_starbucks" />
+
+                    <TextView
+                        android:id="@+id/textView14"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginTop="16dp"
+                        android:layout_marginEnd="132dp"
+                        android:fontFamily="@font/circular_black"
+                        android:text="Starbucks"
+                        android:textSize="16sp"
+                        app:layout_constraintBottom_toTopOf="@+id/textView15"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView14"
+                        app:layout_constraintTop_toTopOf="parent" />
+
+                    <TextView
+                        android:id="@+id/textView15"
+                        android:layout_width="190dp"
+                        android:layout_height="40dp"
+                        android:layout_marginStart="13dp"
+                        android:layout_marginEnd="19dp"
+                        android:layout_marginBottom="35dp"
+                        android:fontFamily="@font/circular_light"
+                        android:text="Collect a 10$ Starbucks giftcard when you claim this reward."
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toTopOf="@+id/button4"
+                        app:layout_constraintEnd_toEndOf="parent"
+                        app:layout_constraintStart_toEndOf="@+id/imageView14"
+                        app:layout_constraintTop_toBottomOf="@+id/textView14" />
+
+                    <TextView
+                        android:id="@+id/textView17"
+                        android:layout_width="59dp"
+                        android:layout_height="18dp"
+                        android:layout_marginEnd="8dp"
+                        android:layout_marginBottom="24dp"
+                        android:fontFamily="@font/circular_light"
+                        android:text="100 Points"
+                        android:textSize="12sp"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/button4" />
+
+                    <ImageView
+                        android:id="@+id/imageView15"
+                        android:layout_width="29dp"
+                        android:layout_height="29dp"
+                        android:layout_marginBottom="20dp"
+                        android:alpha="0.5"
+                        app:layout_constraintBottom_toBottomOf="parent"
+                        app:layout_constraintEnd_toStartOf="@+id/textView17"
+                        app:srcCompat="@drawable/icon_points" />
+                </androidx.constraintlayout.widget.ConstraintLayout>
+            </androidx.cardview.widget.CardView>
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+        <androidx.constraintlayout.widget.ConstraintLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent">
+
+            <ImageView
+                android:id="@+id/to_profile"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:alpha="0.5"
+                app:layout_constraintEnd_toEndOf="parent"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/to_maps"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_account" />
+
+            <ImageView
+                android:id="@+id/to_maps"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:layout_marginTop="16dp"
+                android:alpha="0.5"
+                app:layout_constraintEnd_toStartOf="@+id/to_profile"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toEndOf="@+id/to_rewards"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_address" />
+
+            <ImageView
+                android:id="@+id/to_rewards"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_marginTop="16dp"
+                app:layout_constraintEnd_toStartOf="@+id/to_maps"
+                app:layout_constraintHorizontal_bias="0.5"
+                app:layout_constraintStart_toStartOf="parent"
+                app:layout_constraintTop_toTopOf="parent"
+                app:srcCompat="@drawable/icon_rewards" />
+        </androidx.constraintlayout.widget.ConstraintLayout>
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>
